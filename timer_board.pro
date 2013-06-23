@@ -1,4 +1,4 @@
-update=6/21/2013 10:11:05 PM
+update=6/22/2013 11:02:43 PM
 version=1
 last_client=eeschema
 [cvpcb]
@@ -52,7 +52,7 @@ NetFmtName=
 RptD_X=0
 RptD_Y=100
 RptLab=1
-LabSize=60
+LabSize=47
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -85,3 +85,6 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=atmega32u4
+LibName32=custom_parts
+LibName33=Dispositivos_I2C
+LibName34=con-usb-3
