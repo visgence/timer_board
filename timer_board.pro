@@ -1,4 +1,4 @@
-update=6/22/2013 11:02:43 PM
+update=6/27/2013 8:59:40 PM
 version=1
 last_client=eeschema
 [cvpcb]
@@ -87,4 +87,3 @@ LibName30=valves
 LibName31=atmega32u4
 LibName32=custom_parts
 LibName33=Dispositivos_I2C
-LibName34=con-usb-3
