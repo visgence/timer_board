@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 6/27/2013 10:45:44 PM
+EESchema Schematic File Version 2  date 6/27/2013 10:57:25 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -617,4 +617,32 @@ Wire Wire Line
 	8700 4950 8850 4950
 Wire Wire Line
 	8700 5050 8850 5050
+$Comp
+L BATTERY BT?
+U 1 1 51CD1CCB
+P 2450 750
+F 0 "BT?" H 2450 950 50  0000 C CNN
+F 1 "BATTERY" H 2450 560 50  0000 C CNN
+F 2 "~" H 2450 750 60  0000 C CNN
+F 3 "~" H 2450 750 60  0000 C CNN
+	1    2450 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 750  2150 1100
+$Comp
+L GND #PWR?
+U 1 1 51CD1D3C
+P 2850 850
+F 0 "#PWR?" H 2850 850 30  0001 C CNN
+F 1 "GND" H 2850 780 30  0001 C CNN
+F 2 "" H 2850 850 60  0000 C CNN
+F 3 "" H 2850 850 60  0000 C CNN
+	1    2850 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 750  2850 750 
+Wire Wire Line
+	2850 750  2850 850 
 $EndSCHEMATC
