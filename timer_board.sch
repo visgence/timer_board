@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 6/27/2013 10:57:25 PM
+EESchema Schematic File Version 2  date 6/30/2013 12:25:42 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,7 +31,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:atmega32u4
 LIBS:custom_parts
-LIBS:Dispositivos_I2C
 LIBS:timer_board-cache
 EELAYER 27 0
 EELAYER END
@@ -39,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "28 jun 2013"
+Date "30 jun 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -190,12 +189,12 @@ Connection ~ 2700 2750
 $Comp
 L GND #PWR?
 U 1 1 51C67EB1
-P 3300 2900
-F 0 "#PWR?" H 3300 2900 30  0001 C CNN
-F 1 "GND" H 3300 2830 30  0001 C CNN
-F 2 "" H 3300 2900 60  0000 C CNN
-F 3 "" H 3300 2900 60  0000 C CNN
-	1    3300 2900
+P 4150 2900
+F 0 "#PWR?" H 4150 2900 30  0001 C CNN
+F 1 "GND" H 4150 2830 30  0001 C CNN
+F 2 "" H 4150 2900 60  0000 C CNN
+F 3 "" H 4150 2900 60  0000 C CNN
+	1    4150 2900
 	1    0    0    -1  
 $EndComp
 Connection ~ 3300 2750
@@ -645,4 +644,96 @@ Wire Wire Line
 	2750 750  2850 750 
 Wire Wire Line
 	2850 750  2850 850 
+$Comp
+L T9AS5D22-5 K?
+U 1 1 51CFD049
+P 3500 3750
+F 0 "K?" H 3500 3275 60  0000 C CNN
+F 1 "T9AS5D22-5" H 3450 4025 60  0000 C CNN
+F 2 "" H 3600 3750 60  0000 C CNN
+F 3 "" H 3600 3750 60  0000 C CNN
+	1    3500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN Q?
+U 1 1 51CFD058
+P 2350 4400
+F 0 "Q?" H 2350 4250 50  0000 R CNN
+F 1 "NPN" H 2350 4550 50  0000 R CNN
+F 2 "~" H 2350 4400 60  0000 C CNN
+F 3 "~" H 2350 4400 60  0000 C CNN
+	1    2350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 51CFD065
+P 2450 4850
+F 0 "#PWR?" H 2450 4850 30  0001 C CNN
+F 1 "GND" H 2450 4780 30  0001 C CNN
+F 2 "" H 2450 4850 60  0000 C CNN
+F 3 "" H 2450 4850 60  0000 C CNN
+	1    2450 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4600 2450 4850
+Wire Wire Line
+	2450 3900 2450 4200
+Wire Wire Line
+	2450 4000 2950 4000
+$Comp
+L DIODE D?
+U 1 1 51CFD13D
+P 2450 3700
+F 0 "D?" H 2450 3800 40  0000 C CNN
+F 1 "DIODE" H 2450 3600 40  0000 C CNN
+F 2 "~" H 2450 3700 60  0000 C CNN
+F 3 "~" H 2450 3700 60  0000 C CNN
+	1    2450 3700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2450 4000
+Wire Wire Line
+	2950 3600 2950 3500
+Wire Wire Line
+	2950 3500 2450 3500
+$Comp
+L +5V #PWR?
+U 1 1 51CFD28C
+P 2450 3250
+F 0 "#PWR?" H 2450 3340 20  0001 C CNN
+F 1 "+5V" H 2450 3340 30  0000 C CNN
+F 2 "" H 2450 3250 60  0000 C CNN
+F 3 "" H 2450 3250 60  0000 C CNN
+	1    2450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3500 2450 3250
+$Comp
+L R R?
+U 1 1 51CFD2FF
+P 1800 4400
+F 0 "R?" V 1725 4400 40  0000 C CNN
+F 1 "1k" V 1807 4401 40  0000 C CNN
+F 2 "~" V 1730 4400 30  0000 C CNN
+F 3 "~" H 1800 4400 30  0000 C CNN
+	1    1800 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 4400 2150 4400
+Text GLabel 1300 4400 0    47   Input ~ 0
+RELAY
+Wire Wire Line
+	1300 4400 1550 4400
+Text GLabel 8850 5150 2    47   Input ~ 0
+RELAY
+Wire Wire Line
+	8850 5150 8700 5150
+NoConn ~ 3700 4200
+NoConn ~ 3900 4200
+NoConn ~ 3800 3450
 $EndSCHEMATC
