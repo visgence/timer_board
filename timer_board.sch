@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 7/2/2013 10:25:10 PM
+EESchema Schematic File Version 2  date 7/2/2013 10:27:25 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,10 +37,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Timer Board"
 Date "3 jul 2013"
-Rev ""
-Comp ""
+Rev "1"
+Comp "Visgence Inc."
 Comment1 ""
 Comment2 ""
 Comment3 ""
