@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 7/2/2013 10:27:25 PM
+EESchema Schematic File Version 2  date 7/2/2013 10:32:23 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -153,10 +153,8 @@ Wire Wire Line
 	10125 3000 10325 3000
 Wire Wire Line
 	10325 3000 10325 3150
-Text GLabel 6175 2200 0    47   Input ~ 0
+Text GLabel 6200 2350 0    47   Input ~ 0
 reset
-Wire Wire Line
-	6175 2200 6700 2200
 Text GLabel 9450 3025 0    47   Input ~ 0
 reset
 Wire Wire Line
@@ -1112,4 +1110,62 @@ Wire Wire Line
 	6700 4100 6500 4100
 Wire Wire Line
 	6500 4100 6500 3900
+$Comp
+L R R?
+U 1 1 51D3AA45
+P 5900 1950
+F 0 "R?" V 5825 1950 40  0000 C CNN
+F 1 "10k" V 5907 1951 40  0000 C CNN
+F 2 "~" V 5830 1950 30  0000 C CNN
+F 3 "~" H 5900 1950 30  0000 C CNN
+	1    5900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RESET S?
+U 1 1 51D3AA4B
+P 5400 2100
+F 0 "S?" H 5300 2350 50  0000 L BNN
+F 1 "RESET" H 5300 1850 50  0000 L BNN
+F 2 "~" H 5400 2250 50  0001 C CNN
+F 3 "~" H 5400 2100 60  0000 C CNN
+	1    5400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2200 6700 2200
+$Comp
+L +5V #PWR?
+U 1 1 51D3ABC0
+P 5900 1600
+F 0 "#PWR?" H 5900 1690 20  0001 C CNN
+F 1 "+5V" H 5900 1690 30  0000 C CNN
+F 2 "" H 5900 1600 60  0000 C CNN
+F 3 "" H 5900 1600 60  0000 C CNN
+	1    5900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1600 5900 1700
+Connection ~ 5900 2200
+Wire Wire Line
+	5200 2100 5200 2200
+$Comp
+L GND #PWR?
+U 1 1 51D3AE8D
+P 5050 2300
+F 0 "#PWR?" H 5050 2300 30  0001 C CNN
+F 1 "GND" H 5050 2230 30  0001 C CNN
+F 2 "" H 5050 2300 60  0000 C CNN
+F 3 "" H 5050 2300 60  0000 C CNN
+	1    5050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2300 5050 2200
+Wire Wire Line
+	5050 2200 5200 2200
+Wire Wire Line
+	6200 2350 6200 2200
+Connection ~ 6200 2200
 $EndSCHEMATC
