@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 7/3/2013 11:54:40 PM
+EESchema Schematic File Version 2  date 7/4/2013 12:06:58 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -1010,7 +1010,7 @@ L CONN_2 P3
 U 1 1 51D514ED
 P 11000 4650
 F 0 "P3" V 10950 4650 40  0000 C CNN
-F 1 "OUT" V 11050 4650 40  0000 C CNN
+F 1 "Trigger" V 11050 4650 40  0000 C CNN
 F 2 "" H 11000 4650 60  0000 C CNN
 F 3 "" H 11000 4650 60  0000 C CNN
 	1    11000 4650
