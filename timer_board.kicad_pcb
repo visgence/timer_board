@@ -469,7 +469,7 @@
   )
 
   (module TO92 (layer F.Cu) (tedit 443CFFD1) (tstamp 51D5119E)
-    (at 223.32 62.455)
+    (at 116.205 68.58)
     (descr "Transistor TO92 brochage type BC237")
     (tags "TR TO92")
     (path /51D3B9F5)
