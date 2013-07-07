@@ -1,10 +1,10 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 7/7/2013 2:42:02 PM
+Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 7/7/2013 2:59:57 PM
 
 BeginCmp
 TimeStamp = /51CD1CCB;
 Reference = BT1;
 ValeurCmp = BATTERY;
-IdModule  = TESTPOINT;
+IdModule  = CR2032;
 EndCmp
 
 BeginCmp
