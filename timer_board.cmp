@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 7/7/2013 8:38:52 PM
+Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 7/7/2013 8:42:11 PM
 
 BeginCmp
 TimeStamp = /51CD1CCB;
@@ -81,7 +81,7 @@ BeginCmp
 TimeStamp = /51C67B75;
 Reference = CON1;
 ValeurCmp = AVR-ISP-6;
-IdModule  = AVR-ISP-6;
+IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
