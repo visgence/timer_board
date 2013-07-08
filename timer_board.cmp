@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 7/7/2013 8:22:04 PM
+Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 7/7/2013 8:38:52 PM
 
 BeginCmp
 TimeStamp = /51CD1CCB;
@@ -319,42 +319,42 @@ BeginCmp
 TimeStamp = /51D3A23A;
 Reference = S1;
 ValeurCmp = UP;
-IdModule  = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_6X6;
 EndCmp
 
 BeginCmp
 TimeStamp = /51D3A247;
 Reference = S2;
 ValeurCmp = DOWN;
-IdModule  = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_6X6;
 EndCmp
 
 BeginCmp
 TimeStamp = /51D3A24D;
 Reference = S3;
 ValeurCmp = LEFT;
-IdModule  = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_6X6;
 EndCmp
 
 BeginCmp
 TimeStamp = /51D3A253;
 Reference = S4;
 ValeurCmp = RIGHT;
-IdModule  = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_6X6;
 EndCmp
 
 BeginCmp
 TimeStamp = /51D3A259;
 Reference = S5;
 ValeurCmp = SELECT;
-IdModule  = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_6X6;
 EndCmp
 
 BeginCmp
 TimeStamp = /51D3AA4B;
 Reference = S6;
 ValeurCmp = RESET;
-IdModule  = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_6X6;
 EndCmp
 
 BeginCmp
