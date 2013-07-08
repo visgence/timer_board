@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 7/7/2013 2:59:57 PM
+Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 7/7/2013 8:16:13 PM
 
 BeginCmp
 TimeStamp = /51CD1CCB;
@@ -358,17 +358,17 @@ IdModule  = SW_PUSH_SMALL;
 EndCmp
 
 BeginCmp
-TimeStamp = /51C67CD3;
+TimeStamp = /51DA1E27;
 Reference = U1;
-ValeurCmp = DS3231N;
-IdModule  = TSSOP16;
+ValeurCmp = DS3231MZ;
+IdModule  = SO8N;
 EndCmp
 
 BeginCmp
 TimeStamp = /51D50776;
 Reference = U2;
 ValeurCmp = 74HC04;
-IdModule  = SSOP14;
+IdModule  = SO14N;
 EndCmp
 
 BeginCmp
