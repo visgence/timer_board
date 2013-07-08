@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  7/7/2013 8:14:40 PM
+PCBNEW-LibModule-V1  7/7/2013 8:21:39 PM
 # encoding utf-8
 Units mm
 $INDEX
@@ -14,6 +14,7 @@ SOP-14
 T9AS5D22-5
 TACTILE_SWITCH_SMD
 USB-MICRO-B
+Var_resistor
 $EndINDEX
 $MODULE 1pin_C
 Po 0 0 0 15 516E1C48 00000000 ~~
@@ -1106,4 +1107,43 @@ Ne 0 ""
 Po -3.8 2.65
 $EndPAD
 $EndMODULE USB-MICRO-B
+$MODULE Var_resistor
+Po 0 0 0 15 51DA2230 00000000 ~~
+Li Var_resistor
+Cd Resistance variable / potentiometre
+Kw R
+Sc 0
+AR /4ECF0010
+Op A A 0
+T0 0 -0.381 1.397 1.27 0 0.2032 N I 21 N "RV2"
+T1 0 3.81 1.397 1.27 0 0.2032 N I 21 N "10k"
+DC 0 0.762 4.318 1.778 0.254 21
+$PAD
+Sh "1" C 1.524 1.524 0 0 0
+Dr 0.8128 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2.54 2.54
+$EndPAD
+$PAD
+Sh "2" C 1.524 1.524 0 0 0
+Dr 0.8128 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 -2.54
+$EndPAD
+$PAD
+Sh "3" C 1.524 1.524 0 0 0
+Dr 0.8128 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.54 2.54
+$EndPAD
+$SHAPE3D
+Na "discret/adjustable_rx2.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE Var_resistor
 $EndLIBRARY
