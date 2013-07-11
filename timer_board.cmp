@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 7/10/2013 9:54:40 PM
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 7/10/2013 10:40:55 PM
 
 BeginCmp
 TimeStamp = /51CD1CCB;
@@ -95,7 +95,7 @@ BeginCmp
 TimeStamp = /51CFD13D;
 Reference = D2;
 ValeurCmp = DIODE;
-IdModule  = SM0603;
+IdModule  = D4;
 EndCmp
 
 BeginCmp
@@ -115,7 +115,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51CD1203;
 Reference = DS1;
-ValeurCmp = 2X16_LDC;
+ValeurCmp = 2X16_LCD;
 IdModule  = LCD16X2;
 EndCmp
 
@@ -123,7 +123,7 @@ BeginCmp
 TimeStamp = /51C688B3;
 Reference = F1;
 ValeurCmp = FUSE;
-IdModule  = SM0603;
+IdModule  = SM1206;
 EndCmp
 
 BeginCmp
@@ -173,6 +173,13 @@ TimeStamp = /51DB7417;
 Reference = P5;
 ValeurCmp = ADC;
 IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DE3B27;
+Reference = P6;
+ValeurCmp = CONN_1;
+IdModule  = PINTST;
 EndCmp
 
 BeginCmp
@@ -312,6 +319,13 @@ BeginCmp
 TimeStamp = /51D509E2;
 Reference = R18;
 ValeurCmp = 1k;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DE396D;
+Reference = R19;
+ValeurCmp = 10k;
 IdModule  = SM0603;
 EndCmp
 
