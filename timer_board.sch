@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 7/8/2013 8:19:18 PM
+EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Timer Board"
-Date "9 jul 2013"
+Date "11 jul 2013"
 Rev "1"
 Comp "Visgence Inc."
 Comment1 ""
@@ -342,7 +342,7 @@ L 2X16_LDC DS1
 U 1 1 51CD1203
 P 3450 5250
 F 0 "DS1" H 3450 4900 60  0000 C CNN
-F 1 "2X16_LDC" H 3450 5100 60  0000 C CNN
+F 1 "2X16_LCD" H 3450 5100 60  0000 C CNN
 F 2 "" H 3450 5250 60  0000 C CNN
 F 3 "" H 3450 5250 60  0000 C CNN
 	1    3450 5250
