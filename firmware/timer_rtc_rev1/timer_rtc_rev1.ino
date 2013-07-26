@@ -9,6 +9,8 @@
 //TODO #define OUT
 //TODO #define ADC
 
+#define RTC 0xD0 //I2C address of clock
+
 void setup() {
   pinMode(RELAY, OUTPUT);
   pinMode(BACKLIGHT, OUTPUT);
