@@ -43,7 +43,7 @@ void setup() {
   //initialize and test RTC
   Wire.begin();
   rtc.begin();
-  rtc.adjust(DateTime(__DATE__,__TIME__));
+  //rtc.adjust(DateTime(__DATE__,__TIME__));
   date = rtc.now();
 }
 
@@ -58,6 +58,6 @@ void loop() {
   Serial.println(i);
   Serial.println(date.unixtime());
   i++;
-  delay(100);
+  delay(1000);
   
 }
