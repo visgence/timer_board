@@ -42,7 +42,7 @@
 char i = 33;
 
 RTC_DS1307 rtc;
-DateTime date;
+DateTime dt;
 
 LiquidCrystal2 lcd(1);
 
@@ -74,21 +74,39 @@ void setup() {
   Wire.begin();
   rtc.begin();
   //rtc.adjust(DateTime(__DATE__,__TIME__));
-  date = rtc.now();
+  //date = rtc.now();
   i =33;
 }
 
 //a simple loop to test serial comms
 //char i = 33;
 void loop() {
-  date = rtc.now();
+  dt = rtc.now();
+    lcd.clear();
   
-  if(i > 126)
-    i = 33;
+    lcd.setCursor(0, 0);
+
+    lcd.print(dt.year(), DEC);
+    lcd.print('/');
+    lcd.print(dt.month(), DEC);
+    lcd.print('/');
+    lcd.print(dt.day(), DEC);
+    
+    lcd.setCursor(0, 1);
+    
+    lcd.print(dt.hour(), DEC);
+    lcd.print(':');
+    lcd.print(dt.minute(), DEC);
+    lcd.print(':');
+    lcd.print(dt.second(), DEC);
   
-  Serial.println(i);
-  Serial.println(date.unixtime());
-  i++;
+  
+  //if(i > 126)
+   //i = 33;
+  
+  //Serial.println(i);
+  //Serial.println(date.unixtime());
+  //i++;
   delay(1000);
   
 }
