@@ -1,5 +1,3 @@
-
-#include <LiquidCrystal2.h>
 /*
 * timer_rtc_rev1
 * "Chronomancer" 
@@ -8,6 +6,7 @@
 *
 */
 #include <Wire.h>
+#include <LiquidCrystal2.h>
 #include "RTClib.h"
 #define UP (1 << 7) //PORTB Input
 #define DOWN (1 << 6) //PORTB Input
@@ -28,9 +27,6 @@
 #define RELAY (1 << 4) //PORTF Output
 #define BACKLIGHT (1 << 1) //PORTF Output
 
-//TODO need to set direction with DDRB-F (I dont remeber if 1 is in our)
-//DDRB |= UP & DOWN & LEFT & RIGHT
-//DDRC |= SELECT
 
 //To set a pin HIGH
 //PORTF |= RELAY
@@ -38,34 +34,35 @@
 //To set a pin LOW
 //PORTF &= ~RELAY
 
-
-char i = 33;
-
+double refreshTime;
 RTC_DS1307 rtc;
 DateTime dt;
-
 LiquidCrystal2 lcd(1);
-
 void setup() {
 
   //SET These as outputs 
   DDRF |= RELAY | BACKLIGHT;
+  //Set These as Inputs
+  DDRB &= ~UP & ~DOWN & ~LEFT & ~RIGHT;
+  DDRC &= ~SELECT;
+  DDRD &= ~TRIGGER;
   
   Serial.begin(9600);
   
   //This would actually never be seen, best to print it on the display
   //Serial.println("Hello, world, this is the Chronomancer (rev 1)!");
   
+
   //Test relay and backlight
   PORTF |= RELAY;
   PORTF |= BACKLIGHT; 
-  
-  
+ 
+  //Write to LCD
   lcd.begin(16,2);
-  lcd.write("Hello World");
+  lcd.write("Visgence Inc");
     
   delay(1000);
-  
+  //Turn off Relay
   PORTF &= ~RELAY;
   //PORTF &= ~BACKLIGHT;
 
@@ -75,13 +72,69 @@ void setup() {
   rtc.begin();
   //rtc.adjust(DateTime(__DATE__,__TIME__));
   //date = rtc.now();
-  i =33;
+  
+  displayTime();
+  refreshTime = millis() + 1000;
 }
 
 //a simple loop to test serial comms
 //char i = 33;
+
+
 void loop() {
-  dt = rtc.now();
+    if(millis() > refreshTime) {
+ 	refreshTime = millis() + 1000;
+	displayTime();
+    }
+
+    //Check if UP was pressed;
+    if(~PINB & UP)
+    	{
+	    lcd.clear();
+	    lcd.print("UP");
+	    delay(100);
+	}
+    if(~PINB & DOWN)
+    	{
+	    lcd.clear();
+	    lcd.print("DOWN");
+	    delay(100);
+	}
+    if(~PINB & LEFT)
+    	{
+	    lcd.clear();
+	    lcd.print("LEFT");
+	    delay(100);
+	}
+    if(~PINB & RIGHT)
+    	{
+	    lcd.clear();
+	    lcd.print("RIGHT");
+	    delay(100);
+	}
+    if(~PINC & SELECT)
+    	{
+	    lcd.clear();
+	    lcd.print("SELECT");
+	    delay(100);
+	}
+    if(~PIND & TRIGGER)
+    	{
+	    lcd.clear();
+	    lcd.print("TRIGGER");
+	    delay(100);
+	}
+
+
+
+   //Serial.println(PINB);
+   //delay(100);
+
+}
+
+void displayTime() {
+
+    dt = rtc.now();
     lcd.clear();
   
     lcd.setCursor(0, 0);
@@ -99,15 +152,6 @@ void loop() {
     lcd.print(dt.minute(), DEC);
     lcd.print(':');
     lcd.print(dt.second(), DEC);
-  
-  
-  //if(i > 126)
-   //i = 33;
-  
-  //Serial.println(i);
-  //Serial.println(date.unixtime());
-  //i++;
-  delay(1000);
-  
+
 }
 
